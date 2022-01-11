@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "LogRocket",
+    platforms: [
+        .iOS(.v13)
+    ],
     products: [
         .library(
             name: "LogRocket",
@@ -14,8 +17,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "LogRocket",
-            url: "https://storage.googleapis.com/logrocket-ios/0.23.0/LogRocket.xcframework.zip",
-            checksum: "5a40dbf1ad5b7ed50b5b78a1bf2fde3e956389fec3eccac6a6a35ff8ee555105"
+            path: "LogRocket.xcframework"
         )
     ]
 )
